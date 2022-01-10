@@ -2143,7 +2143,7 @@ var Logo = function (_a) {
         React.createElement("img", __assign({}, props, { src: "/images/egg/logo.png", alt: "", width: "325", height: "294" })),
         isPushed ? (React.createElement("span", { className: "desktop-icon", style: { color: "#52D784", marginLeft: "30px", fontSize: "24px", fontWeight: 500 } },
             "Envi",
-            React.createElement("span", { style: { color: "#60D5DC" } }, "Dex"))) : (React.createElement(React.Fragment, null))));
+            React.createElement("span", { style: { color: "#60D5DC" } }, "Defi"))) : (React.createElement(React.Fragment, null))));
 };
 var templateObject_1$y, templateObject_2$c, templateObject_3$6;
 
