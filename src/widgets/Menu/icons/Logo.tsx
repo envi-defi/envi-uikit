@@ -50,7 +50,7 @@ const Logo: React.FC<LogoProps> = ({ isDark, isPushed, ...props }) => {
       {isPushed ? (
         <span className="desktop-icon" style={{ color: "#52D784", marginLeft: "30px", fontSize: "24px", fontWeight: 500 }}>
           Envi
-          <span style={{ color: "#60D5DC" }}>Dex</span>
+          <span style={{ color: "#60D5DC" }}>Defi</span>
         </span>
       ) : (
         <></>
