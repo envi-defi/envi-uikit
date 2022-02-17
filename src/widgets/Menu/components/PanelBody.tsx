@@ -3,14 +3,11 @@ import styled, { keyframes } from "styled-components";
 import { useLocation } from "react-router-dom";
 import { SvgProps } from "../../../components/Svg";
 import * as IconModule from "../icons";
-import Accordion from "./Accordion";
 import { MenuEntry, LinkLabel } from "./MenuEntry";
 import { MenuBottomEntry, LinkBottomLabel } from "./MenuBottomEntry";
 import MenuLink from "./MenuLink";
 import { PanelProps, PushedProps } from "../types";
 import { BadgeNewIcon } from "../icons";
-import CakePrice from "./CakePrice";
-import SocialLinks from "./SocialLinks";
 import { PRICE_ENTRY_HEIGHT } from "../config";
 
 interface Props extends PanelProps, PushedProps {
@@ -19,20 +16,6 @@ interface Props extends PanelProps, PushedProps {
 }
 
 const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
-
-const Price = styled.div`
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: ${PRICE_ENTRY_HEIGHT}px;
-  background-color: rgba(109, 215, 132, 0.15);
-  //border-radius: 4px;
-  //margin: 8px;
-  // padding: 0 8px;
-  // border-top: 1px solid #42be71;
-  // border-bottom: 1px solid #42be71;
-`;
 
 const Container = styled.div`
   display: flex;
@@ -90,7 +73,7 @@ const BottomContainer = styled.div`
   grid-template-columns: repeat(3, minmax(0, 1fr));
 `;
 
-const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links, cakePriceUsd }) => {
+const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   const location = useLocation();
 
   // Close the menu when a user clicks a link on mobile
