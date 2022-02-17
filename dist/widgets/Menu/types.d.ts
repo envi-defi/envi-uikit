@@ -3,6 +3,11 @@ export interface LangType {
     code: string;
     language: string;
 }
+export interface TokenInfo {
+    link?: string;
+    priceUsd?: number;
+    logoUrl?: string;
+}
 export interface Profile {
     username?: string;
     image?: string;
@@ -38,8 +43,7 @@ export interface MenuEntry {
 export interface PanelProps {
     isDark: boolean;
     toggleTheme: (isDark: boolean) => void;
-    cakePriceUsd?: number;
-    ethPriceUsd?: number;
+    tokens: TokenInfo[];
     currentLang: string;
     langs: LangType[];
     setLang: (lang: LangType) => void;
