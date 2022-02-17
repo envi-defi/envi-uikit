@@ -10,8 +10,9 @@ export enum Token {
 };
 
 interface Props {
-  token?: Token;
-  cakePriceUsd?: number;
+  link?: string
+  priceUsd?: number
+  logoUrl?: string
 }
 
 const PriceLink = styled.span`
@@ -23,41 +24,42 @@ const PriceLink = styled.span`
   }
 `;
 
-const CakePrice: React.FC<Props> = ({ token = Token.SPIRIT, cakePriceUsd }) => {
+const CakePrice: React.FC<Props> = ({ link, logoUrl, priceUsd = 0 }) => {
   const renderIcon = () => {
     const styles = {
       width: "24px",
       mr: "8px"
     };
-    switch(token) {
-      case Token.SPIRIT: 
-        return <PancakeRoundIcon {...styles} />;
-      case Token.ETH:
-        return <BnbRoundIcon {...styles} />;
-      default:
-        return null;
-    }
+    return <img src={logoUrl} {...styles} />
+    // switch(token) {
+    //   case Token.SPIRIT: 
+    //     return <PancakeRoundIcon {...styles} />;
+    //   case Token.ETH:
+    //     return <BnbRoundIcon {...styles} />;
+    //   default:
+    //     return null;
+    // }
   };
 
-  const getPriceLink = () => {
-    switch(token) {
-      case Token.SPIRIT: 
-        return `https://bscscan.com/tokens/`;
-      case Token.ETH:
-        return `https://coinmarketcap.com/currencies/wbnb/`;
-    }
-  };
+  // const getPriceLink = () => {
+  //   switch(token) {
+  //     case Token.SPIRIT: 
+  //       return `https://bscscan.com/tokens/`;
+  //     case Token.ETH:
+  //       return `https://coinmarketcap.com/currencies/wbnb/`;
+  //   }
+  // };
 
-  return cakePriceUsd ? (
+  return priceUsd ? (
     <PriceLink>
       {renderIcon()}
       <Link
-        href={getPriceLink()}
+        href={link}
         style={{ marginLeft: "5px", textDecoration: "none" }}
         target="_blank"
         color="textSubtle"
         fontSize="14px"
-      >{`$${cakePriceUsd.toFixed(2)}`}</Link>
+      >{`$${priceUsd.toFixed(2)}`}</Link>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />
