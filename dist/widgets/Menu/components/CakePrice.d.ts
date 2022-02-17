@@ -4,8 +4,9 @@ export declare enum Token {
     ETH = "BNB"
 }
 interface Props {
-    token?: Token;
-    cakePriceUsd?: number;
+    link?: string;
+    priceUsd?: number;
+    logoUrl?: string;
 }
 declare const _default: React.NamedExoticComponent<Props>;
 export default _default;
