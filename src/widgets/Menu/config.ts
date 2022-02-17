@@ -144,7 +144,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/envicoin_envi",
+    href: "https://twitter.com/DefiEnvi",
   },
   // {
   //   label: "Discord",
@@ -154,17 +154,17 @@ export const socials = [
   {
     label: "Facebook",
     icon: "FacebookIcon",
-    href: "https://www.facebook.com/EnviCoinFoundation",
-  },
-  {
-    label: "Telegram",
-    icon: "TelegramIcon",
-    href: "https://t.me/envicoin",
+    href: "https://www.facebook.com/profile.php?id=100078447813072",
   },
   {
     label: "GitHub",
     icon: "GitHubIcon",
     href: "https://github.com/envicoin",
+  },
+  {
+    label: "Telegram",
+    icon: "TelegramIcon",
+    href: "https://t.me/envicoin",
   },
   {
     label: "Medium",
@@ -177,17 +177,17 @@ export const infos = [
   {
     label: "Nomics",
     icon: "NomicsIcon",
-    href: "https://nomics.com/assets/envi-envicoin",
+    href: "https://nomics.com/",
   },
   {
     label: "Website",
     icon: "WebsiteIcon",
-    href: "https://www.envifoundation.org/",
+    href: "http://envidefi.com",
   },
   {
     label: "CBanks",
     icon: "CBanksIcon",
-    href: "https://www.cbanks.org/cryptocurrencies/envicoin",
+    href: "https://www.cbanks.org/cryptocurrencies",
   },
   {
     label: "Ledger",
