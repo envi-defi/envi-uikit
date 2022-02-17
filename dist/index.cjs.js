@@ -2875,7 +2875,7 @@ var socials$1 = [
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/envicoin_envi",
+        href: "https://twitter.com/DefiEnvi",
     },
     // {
     //   label: "Discord",
@@ -2888,14 +2888,14 @@ var socials$1 = [
         href: "https://www.facebook.com/EnviCoinFoundation",
     },
     {
-        label: "Telegram",
-        icon: "TelegramIcon",
-        href: "https://t.me/envicoin",
-    },
-    {
         label: "GitHub",
         icon: "GitHubIcon",
         href: "https://github.com/envicoin",
+    },
+    {
+        label: "Telegram",
+        icon: "TelegramIcon",
+        href: "https://t.me/envicoin",
     },
     {
         label: "Medium",
@@ -2907,17 +2907,17 @@ var infos = [
     {
         label: "Nomics",
         icon: "NomicsIcon",
-        href: "https://nomics.com/assets/envi-envicoin",
+        href: "https://nomics.com/",
     },
     {
         label: "Website",
         icon: "WebsiteIcon",
-        href: "https://www.envifoundation.org/",
+        href: "http://envidefi.com",
     },
     {
         label: "CBanks",
         icon: "CBanksIcon",
-        href: "https://www.cbanks.org/cryptocurrencies/envicoin",
+        href: "https://www.cbanks.org/cryptocurrencies",
     },
     {
         label: "Ledger",
@@ -3022,8 +3022,7 @@ var MenuLink = function (_a) {
 };
 
 var Icons$1 = IconModule;
-styled__default['default'].div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  background-color: rgba(109, 215, 132, 0.15);\n  //border-radius: 4px;\n  //margin: 8px;\n  // padding: 0 8px;\n  // border-top: 1px solid #42be71;\n  // border-bottom: 1px solid #42be71;\n"], ["\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  background-color: rgba(109, 215, 132, 0.15);\n  //border-radius: 4px;\n  //margin: 8px;\n  // padding: 0 8px;\n  // border-top: 1px solid #42be71;\n  // border-bottom: 1px solid #42be71;\n"])), PRICE_ENTRY_HEIGHT);
-var Container$2 = styled__default['default'].div(templateObject_2$h || (templateObject_2$h = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  margin: 8px;\n  // border: 1px solid #374151;\n  // margin-top: 70px;\n  // margin: 70px 8px 8px 8px;\n  // border-radius: 8px;\n  // padding: 6px;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  margin: 8px;\n  // border: 1px solid #374151;\n  // margin-top: 70px;\n  // margin: 70px 8px 8px 8px;\n  // border-radius: 8px;\n  // padding: 6px;\n"])));
+var Container$2 = styled__default['default'].div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  margin: 8px;\n  // border: 1px solid #374151;\n  // margin-top: 70px;\n  // margin: 70px 8px 8px 8px;\n  // border-radius: 8px;\n  // padding: 6px;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  margin: 8px;\n  // border: 1px solid #374151;\n  // margin-top: 70px;\n  // margin: 70px 8px 8px 8px;\n  // border-radius: 8px;\n  // padding: 6px;\n"])));
 /*
   background: ${({ theme }) =>
     theme.isDark
@@ -3031,13 +3030,13 @@ var Container$2 = styled__default['default'].div(templateObject_2$h || (template
       : "linear-gradient(to top, #E6FDFF 40%, #FFFFFF 80%)"
   };
   */
-styled__default['default'].div(templateObject_3$a || (templateObject_3$a = __makeTemplateObject(["\n  height: 43px;\n  margin: 40px 5px 25px 5px;\n"], ["\n  height: 43px;\n  margin: 40px 5px 25px 5px;\n"])));
-var rotate$2 = styled.keyframes(templateObject_4$5 || (templateObject_4$5 = __makeTemplateObject(["\n    0% { transform: translate(0,  0px); }\n    50%  { transform: translate(8px, 0); }\n    100%   { transform: translate(0, -0px); }  \n  }\n"], ["\n    0% { transform: translate(0,  0px); }\n    50%  { transform: translate(8px, 0); }\n    100%   { transform: translate(0, -0px); }  \n  }\n"])));
-var NewIcon = styled__default['default'](Icon$1m)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  position: absolute;\n  left: 155px;\n  width: 40px;\n  margin-right: 45px;\n  animation: ", " 6s infinite;\n"], ["\n  position: absolute;\n  left: 155px;\n  width: 40px;\n  margin-right: 45px;\n  animation: ", " 6s infinite;\n"])), rotate$2);
-var MenuWrapper = styled__default['default'].div(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n"])));
-var BottomContainer = styled__default['default'].div(templateObject_7$1 || (templateObject_7$1 = __makeTemplateObject(["\n  position: relative;\n  margin-top: auto;\n  margin-bottom: 9px;\n  display: grid;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n"], ["\n  position: relative;\n  margin-top: auto;\n  margin-bottom: 9px;\n  display: grid;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n"])));
+styled__default['default'].div(templateObject_2$h || (templateObject_2$h = __makeTemplateObject(["\n  height: 43px;\n  margin: 40px 5px 25px 5px;\n"], ["\n  height: 43px;\n  margin: 40px 5px 25px 5px;\n"])));
+var rotate$2 = styled.keyframes(templateObject_3$a || (templateObject_3$a = __makeTemplateObject(["\n    0% { transform: translate(0,  0px); }\n    50%  { transform: translate(8px, 0); }\n    100%   { transform: translate(0, -0px); }  \n  }\n"], ["\n    0% { transform: translate(0,  0px); }\n    50%  { transform: translate(8px, 0); }\n    100%   { transform: translate(0, -0px); }  \n  }\n"])));
+var NewIcon = styled__default['default'](Icon$1m)(templateObject_4$5 || (templateObject_4$5 = __makeTemplateObject(["\n  position: absolute;\n  left: 155px;\n  width: 40px;\n  margin-right: 45px;\n  animation: ", " 6s infinite;\n"], ["\n  position: absolute;\n  left: 155px;\n  width: 40px;\n  margin-right: 45px;\n  animation: ", " 6s infinite;\n"])), rotate$2);
+var MenuWrapper = styled__default['default'].div(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n"])));
+var BottomContainer = styled__default['default'].div(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  position: relative;\n  margin-top: auto;\n  margin-bottom: 9px;\n  display: grid;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n"], ["\n  position: relative;\n  margin-top: auto;\n  margin-bottom: 9px;\n  display: grid;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n"])));
 var PanelBody = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, isMobile = _a.isMobile, links = _a.links; _a.cakePriceUsd;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, isMobile = _a.isMobile, links = _a.links;
     var location = reactRouterDom.useLocation();
     // Close the menu when a user clicks a link on mobile
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
@@ -3068,7 +3067,7 @@ var PanelBody = function (_a) {
                     entry.label === "LGE" || entry.label === "Bridge" ? React__default['default'].createElement(NewIcon, null) : null))));
     })));
 };
-var templateObject_1$H, templateObject_2$h, templateObject_3$a, templateObject_4$5, templateObject_5$2, templateObject_6$1, templateObject_7$1;
+var templateObject_1$H, templateObject_2$h, templateObject_3$a, templateObject_4$5, templateObject_5$2, templateObject_6$1;
 
 var Token;
 (function (Token) {
@@ -3077,32 +3076,33 @@ var Token;
 })(Token || (Token = {}));
 var PriceLink = styled__default['default'].span(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n\n  svg {\n    transition: transform 0.3s;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n\n  svg {\n    transition: transform 0.3s;\n  }\n"])));
 var CakePrice = function (_a) {
-    var _b = _a.token, token = _b === void 0 ? Token.SPIRIT : _b, cakePriceUsd = _a.cakePriceUsd;
+    var link = _a.link, logoUrl = _a.logoUrl, _b = _a.priceUsd, priceUsd = _b === void 0 ? 0 : _b;
     var renderIcon = function () {
         var styles = {
             width: "24px",
             mr: "8px"
         };
-        switch (token) {
-            case Token.SPIRIT:
-                return React__default['default'].createElement(Icon$y, __assign({}, styles));
-            case Token.ETH:
-                return React__default['default'].createElement(Icon$c, __assign({}, styles));
-            default:
-                return null;
-        }
+        return React__default['default'].createElement("img", __assign({ src: logoUrl }, styles));
+        // switch(token) {
+        //   case Token.SPIRIT: 
+        //     return <PancakeRoundIcon {...styles} />;
+        //   case Token.ETH:
+        //     return <BnbRoundIcon {...styles} />;
+        //   default:
+        //     return null;
+        // }
     };
-    var getPriceLink = function () {
-        switch (token) {
-            case Token.SPIRIT:
-                return "https://bscscan.com/tokens/";
-            case Token.ETH:
-                return "https://coinmarketcap.com/currencies/wbnb/";
-        }
-    };
-    return cakePriceUsd ? (React__default['default'].createElement(PriceLink, null,
+    // const getPriceLink = () => {
+    //   switch(token) {
+    //     case Token.SPIRIT: 
+    //       return `https://bscscan.com/tokens/`;
+    //     case Token.ETH:
+    //       return `https://coinmarketcap.com/currencies/wbnb/`;
+    //   }
+    // };
+    return priceUsd ? (React__default['default'].createElement(PriceLink, null,
         renderIcon(),
-        React__default['default'].createElement(Link, { href: getPriceLink(), style: { marginLeft: "5px", textDecoration: "none" }, target: "_blank", color: "textSubtle", fontSize: "14px" }, "$" + cakePriceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
+        React__default['default'].createElement(Link, { href: link, style: { marginLeft: "5px", textDecoration: "none" }, target: "_blank", color: "textSubtle", fontSize: "14px" }, "$" + priceUsd.toFixed(2)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
 };
 var CakePrice$1 = React__default['default'].memo(CakePrice);
 var templateObject_1$I;
@@ -3132,11 +3132,11 @@ var Container$3 = styled__default['default'].div(templateObject_1$J || (template
     return (theme.isDark ? "#0D0E21" : "#E6FDFF");
 });
 var SocialEntry = styled__default['default'].div(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n  width: 100%;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n  width: 100%;\n"])), MENU_ENTRY_HEIGHT);
-var PriceGroup = styled__default['default'].div(templateObject_3$b || (templateObject_3$b = __makeTemplateObject(["\n  display: flex;\n  justify-content: center;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  justify-content: center;\n  padding: 0 8px;\n"])));
+var PriceGroup = styled__default['default'].div(templateObject_3$b || (templateObject_3$b = __makeTemplateObject(["\n  display: grid;\n  padding: 0 8px;\n  gap: 3px;\n  grid-template-columns: repeat(2, 1fr);\n"], ["\n  display: grid;\n  padding: 0 8px;\n  gap: 3px;\n  grid-template-columns: repeat(2, 1fr);\n"])));
 var Price = styled__default['default'].div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  flex: 1;\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: rgba(109, 215, 132, 0.15);\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"], ["\n  flex: 1;\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: rgba(109, 215, 132, 0.15);\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"])), PRICE_ENTRY_HEIGHT);
-var FantomPrice = styled__default['default'](Price)(templateObject_5$3 || (templateObject_5$3 = __makeTemplateObject(["\n  background-color: #002943;\n  a {\n    color: #1C9BCA;\n  }\n"], ["\n  background-color: #002943;\n  a {\n    color: #1C9BCA;\n  }\n"])));
+styled__default['default'](Price)(templateObject_5$3 || (templateObject_5$3 = __makeTemplateObject(["\n  background-color: #002943;\n  a {\n    color: #1C9BCA;\n  }\n"], ["\n  background-color: #002943;\n  a {\n    color: #1C9BCA;\n  }\n"])));
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; var cakePriceUsd = _a.cakePriceUsd, ethPriceUsd = _a.ethPriceUsd; _a.currentLang; _a.langs; _a.setLang;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; _a.currentLang; _a.langs; _a.setLang; var tokens = _a.tokens;
     if (!isPushed) {
         return (React__default['default'].createElement(Container$3, null,
             React__default['default'].createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
@@ -3146,11 +3146,8 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(Container$3, null,
             React__default['default'].createElement(SocialEntry, null,
                 React__default['default'].createElement(InfoLinks, null))),
-        React__default['default'].createElement(PriceGroup, null,
-            React__default['default'].createElement(Price, null,
-                React__default['default'].createElement(CakePrice$1, { cakePriceUsd: cakePriceUsd })),
-            React__default['default'].createElement(FantomPrice, null,
-                React__default['default'].createElement(CakePrice$1, { token: Token.ETH, cakePriceUsd: ethPriceUsd }))),
+        React__default['default'].createElement(PriceGroup, null, tokens.map(function (token) { return (React__default['default'].createElement(Price, null,
+            React__default['default'].createElement(CakePrice$1, __assign({}, token)))); })),
         React__default['default'].createElement(Container$3, null,
             React__default['default'].createElement(SocialEntry, null,
                 React__default['default'].createElement(SocialLinks$3, null)))));
@@ -3518,7 +3515,7 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$4 |
 });
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, ethPriceUsd = _a.ethPriceUsd, cakePriceUsd = _a.cakePriceUsd, links = _a.links; _a.profile; var children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, tokens = _a.tokens, links = _a.links; _a.profile; var children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = React.useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -3560,7 +3557,7 @@ var Menu = function (_a) {
             React__default['default'].createElement(Flex, null,
                 React__default['default'].createElement(UserBlock$1, { account: account, login: login, logout: logout, isDark: isDark, showMenu: showMenu }))),
         React__default['default'].createElement(BodyWrapper, null,
-            React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, ethPriceUsd: ethPriceUsd, pushNav: setIsPushed, links: links }),
+            React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, tokens: tokens, pushNav: setIsPushed, links: links }),
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu },
                 children,
                 React__default['default'].createElement(Text, { mt: "32px", mb: "24px", textAlign: "center", fontWeight: "400", color: "textSubtle" }, "The Currency of Eco-Conscious Engineering Technologies")),
