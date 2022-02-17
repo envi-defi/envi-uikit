@@ -36,9 +36,10 @@ const SocialEntry = styled.div`
 `;
 
 const PriceGroup = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
   padding: 0 8px;
+  gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
 `;
 
 const Price = styled.div`
@@ -67,11 +68,10 @@ const PanelFooter: React.FC<Props> = ({
   pushNav,
   toggleTheme,
   isDark,
-  cakePriceUsd,
-  ethPriceUsd,
   currentLang,
   langs,
   setLang,
+  tokens
 }) => {
   if (!isPushed) {
     return (
@@ -91,12 +91,13 @@ const PanelFooter: React.FC<Props> = ({
         </SocialEntry>
       </Container>
       <PriceGroup>
-        <Price>
-          <CakePrice cakePriceUsd={cakePriceUsd} />
-        </Price>
-        <FantomPrice>
-          <CakePrice token={Token.ETH} cakePriceUsd={ethPriceUsd} />
-        </FantomPrice>
+        {
+          tokens.map((token) => (
+            <Price>
+              <CakePrice {...token} />
+            </Price>
+          ))
+        }
       </PriceGroup>
       <Container>
         <SocialEntry>
