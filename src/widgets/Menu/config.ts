@@ -199,6 +199,6 @@ export const infos = [
 export const MENU_HEIGHT = 64;
 export const MENU_ENTRY_HEIGHT = 48;
 export const MENU_BOTTOM_ENTRY_HEIGHT = 20;
-export const PRICE_ENTRY_HEIGHT = 42;
+export const PRICE_ENTRY_HEIGHT = 38;
 export const SIDEBAR_WIDTH_FULL = 240;
 export const SIDEBAR_WIDTH_REDUCED = 76;

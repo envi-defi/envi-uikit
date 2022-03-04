@@ -50,20 +50,24 @@ const CakePrice: React.FC<Props> = ({ link, logoUrl, priceUsd = 0 }) => {
   //   }
   // };
 
-  return priceUsd ? (
+  return (
     <PriceLink>
       {renderIcon()}
-      <Link
-        href={link}
-        style={{ marginLeft: "5px", textDecoration: "none" }}
-        target="_blank"
-        color="textSubtle"
-        fontSize="14px"
-      >{`$${priceUsd.toFixed(2)}`}</Link>
+      {
+        priceUsd ? (
+          <Link
+            href={link}
+            style={{ marginLeft: "5px", textDecoration: "none", overflowWrap: 'anywhere' }}
+            target="_blank"
+            color="textSubtle"
+            fontSize="14px"
+          >{`$${priceUsd.toFixed(2)}`}</Link>
+        ) : (
+          <Skeleton width={40} height={24} ml='6px' />
+        )
+      }
     </PriceLink>
-  ) : (
-    <Skeleton width={80} height={24} />
-  );
+  )
 };
 
 export default React.memo(CakePrice);

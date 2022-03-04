@@ -2872,7 +2872,7 @@ var socials$1 = [
     {
         label: "Facebook",
         icon: "FacebookIcon",
-        href: "https://www.facebook.com/EnviCoinFoundation",
+        href: "https://www.facebook.com/profile.php?id=100078447813072",
     },
     {
         label: "GitHub",
@@ -2915,7 +2915,7 @@ var infos = [
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;
 var MENU_BOTTOM_ENTRY_HEIGHT = 20;
-var PRICE_ENTRY_HEIGHT = 42;
+var PRICE_ENTRY_HEIGHT = 38;
 var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 76;
 
@@ -3087,9 +3087,9 @@ var CakePrice = function (_a) {
     //       return `https://coinmarketcap.com/currencies/wbnb/`;
     //   }
     // };
-    return priceUsd ? (React.createElement(PriceLink, null,
+    return (React.createElement(PriceLink, null,
         renderIcon(),
-        React.createElement(Link, { href: link, style: { marginLeft: "5px", textDecoration: "none" }, target: "_blank", color: "textSubtle", fontSize: "14px" }, "$" + priceUsd.toFixed(2)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
+        priceUsd ? (React.createElement(Link, { href: link, style: { marginLeft: "5px", textDecoration: "none", overflowWrap: 'anywhere' }, target: "_blank", color: "textSubtle", fontSize: "14px" }, "$" + priceUsd.toFixed(2))) : (React.createElement(Skeleton, { width: 40, height: 24, ml: '6px' }))));
 };
 var CakePrice$1 = React.memo(CakePrice);
 var templateObject_1$I;
@@ -3118,10 +3118,9 @@ var Container$3 = styled.div(templateObject_1$J || (templateObject_1$J = __makeT
     var theme = _a.theme;
     return (theme.isDark ? "#0D0E21" : "#E6FDFF");
 });
-var SocialEntry = styled.div(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n  width: 100%;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n  width: 100%;\n"])), MENU_ENTRY_HEIGHT);
+var SocialEntry = styled.div(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  // height: ", "px;\n  height: 38px;\n  padding: 0 8px;\n  width: 100%;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  // height: ", "px;\n  height: 38px;\n  padding: 0 8px;\n  width: 100%;\n"])), MENU_ENTRY_HEIGHT);
 var PriceGroup = styled.div(templateObject_3$b || (templateObject_3$b = __makeTemplateObject(["\n  display: grid;\n  padding: 0 8px;\n  gap: 3px;\n  grid-template-columns: repeat(2, 1fr);\n"], ["\n  display: grid;\n  padding: 0 8px;\n  gap: 3px;\n  grid-template-columns: repeat(2, 1fr);\n"])));
-var Price = styled.div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  flex: 1;\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: rgba(109, 215, 132, 0.15);\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"], ["\n  flex: 1;\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: rgba(109, 215, 132, 0.15);\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"])), PRICE_ENTRY_HEIGHT);
-styled(Price)(templateObject_5$3 || (templateObject_5$3 = __makeTemplateObject(["\n  background-color: #002943;\n  a {\n    color: #1C9BCA;\n  }\n"], ["\n  background-color: #002943;\n  a {\n    color: #1C9BCA;\n  }\n"])));
+var Price = styled.div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: rgba(109, 215, 132, 0.15);\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"], ["\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: rgba(109, 215, 132, 0.15);\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"])), PRICE_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; _a.currentLang; _a.langs; _a.setLang; var tokens = _a.tokens;
     if (!isPushed) {
@@ -3130,16 +3129,15 @@ var PanelFooter = function (_a) {
                 React.createElement(Icon$m, null))));
     }
     return (React.createElement(React.Fragment, null,
-        React.createElement(Container$3, null,
-            React.createElement(SocialEntry, null,
-                React.createElement(InfoLinks, null))),
         React.createElement(PriceGroup, null, tokens.map(function (token) { return (React.createElement(Price, null,
             React.createElement(CakePrice$1, __assign({}, token)))); })),
         React.createElement(Container$3, null,
             React.createElement(SocialEntry, null,
+                React.createElement(InfoLinks, null)),
+            React.createElement(SocialEntry, null,
                 React.createElement(SocialLinks$3, null)))));
 };
-var templateObject_1$J, templateObject_2$i, templateObject_3$b, templateObject_4$6, templateObject_5$3;
+var templateObject_1$J, templateObject_2$i, templateObject_3$b, templateObject_4$6;
 
 var StyledPanel = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  position: fixed;\n  padding-top: \"80px\";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background: ", ";\n  width: ", ";\n  height: 91%;\n  transition: padding-top 0.2s, width 0.2s;\n  border: ", ";\n  margin-top: 70px;\n  margin: 70px 8px 8px 8px;\n  border-radius: 8px;\n  padding: ", ";\n  /* \n  border-right: ", ";\n  border-right: ", "; \n  */\n  /* \n    border-right: ", ";\n  */\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-width: 1px;\n    // border-image: linear-gradient(to top, #42d785, rgba(0, 0, 0, 0)) 0% 100%;\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: \"80px\";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background: ",
     ";\n  width: ", ";\n  height: 91%;\n  transition: padding-top 0.2s, width 0.2s;\n  border: ", ";\n  margin-top: 70px;\n  margin: 70px 8px 8px 8px;\n  border-radius: 8px;\n  padding: ", ";\n  /* \n  border-right: ", ";\n  border-right: ", "; \n  */\n  /* \n    border-right: ",
@@ -3496,7 +3494,7 @@ var Inner = styled.div(templateObject_4$7 || (templateObject_4$7 = __makeTemplat
     var isPushed = _a.isPushed;
     return "calc(100% - " + (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px)";
 });
-var MobileOnlyOverlay = styled(Overlay)(templateObject_5$4 || (templateObject_5$4 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+var MobileOnlyOverlay = styled(Overlay)(templateObject_5$3 || (templateObject_5$3 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -3550,7 +3548,7 @@ var Menu = function (_a) {
                 React.createElement(Text, { mt: "32px", mb: "24px", textAlign: "center", fontWeight: "400", color: "textSubtle" }, "The Currency of Eco-Conscious Engineering Technologies")),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$O, templateObject_2$l, templateObject_3$d, templateObject_4$7, templateObject_5$4;
+var templateObject_1$O, templateObject_2$l, templateObject_3$d, templateObject_4$7, templateObject_5$3;
 
 var ToastAction = function (_a) {
     var action = _a.action;

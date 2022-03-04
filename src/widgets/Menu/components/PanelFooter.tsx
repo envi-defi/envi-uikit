@@ -30,7 +30,8 @@ const SocialEntry = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: ${MENU_ENTRY_HEIGHT}px;
+  // height: ${MENU_ENTRY_HEIGHT}px;
+  height: 38px;
   padding: 0 8px;
   width: 100%;
 `;
@@ -44,7 +45,6 @@ const PriceGroup = styled.div`
 
 const Price = styled.div`
   flex: 1;
-  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,13 +54,6 @@ const Price = styled.div`
   background-color: rgba(109, 215, 132, 0.15);
   margin: 0 2px;
   // border-bottom: 1px solid #42BE71;
-`;
-
-const FantomPrice = styled(Price)`
-  background-color: #002943;
-  a {
-    color: #1C9BCA;
-  }
 `;
 
 const PanelFooter: React.FC<Props> = ({
@@ -85,11 +78,6 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <>
-      <Container>
-        <SocialEntry>
-          <InfoLinks />
-        </SocialEntry>
-      </Container>
       <PriceGroup>
         {
           tokens.map((token) => (
@@ -100,6 +88,9 @@ const PanelFooter: React.FC<Props> = ({
         }
       </PriceGroup>
       <Container>
+        <SocialEntry>
+          <InfoLinks />
+        </SocialEntry>
         <SocialEntry>
           <SocialLinks />
         </SocialEntry>
